@@ -1,0 +1,8 @@
+System check identified no issues (0 silenced).
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 14, 2026 - 18:01:26
+Django version 6.1.2, using settings 'dealership_backend.settings'
+Starting WSGI development server at http://127.0.0.1:8003/

@@ -44,3 +44,64 @@ body {
 footer {
     margin-top: 20px;
 }
+
+
+/* Featured car card styling */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.04);
+}
+
+/* Full-screen homepage hero */
+.hero-section {
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Transparent dark overlay */
+.hero-overlay {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+/* Hero text */
+.hero-content h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.hero-content .btn {
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+}

@@ -14,3 +14,12 @@ backend/db.sqlite3
 # Editor settings
 .theia/
 .vscode/
+
+# Local session cookies
+cookies.txt
+
+# Backend virtual environment
+backend/.venv/
+
+# Local API response containing cookie headers
+login_response.txt
