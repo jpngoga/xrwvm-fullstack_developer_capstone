@@ -1,7 +1,3 @@
-from django.shortcuts import render
-
-# Create your views here.
-
 import json
 
 from django.contrib.auth import authenticate, login, logout
@@ -16,16 +12,18 @@ from django.views.decorators.http import require_POST
 def register(request):
     try:
         data = json.loads(request.body)
-    except json.JSONDecodeError:
+    except (json.JSONDecodeError, UnicodeDecodeError):
         return JsonResponse({"error": "Invalid JSON."}, status=400)
 
     username = data.get("username", "").strip()
+    first_name = data.get("first_name", "").strip()
+    last_name = data.get("last_name", "").strip()
     email = data.get("email", "").strip()
     password = data.get("password", "")
 
-    if not username or not email or not password:
+    if not all([username, first_name, last_name, email, password]):
         return JsonResponse(
-            {"error": "Username, email, and password are required."},
+            {"error": "Username, first name, last name, email, and password are required."},
             status=400,
         )
 
@@ -37,6 +35,8 @@ def register(request):
 
     user = User.objects.create_user(
         username=username,
+        first_name=first_name,
+        last_name=last_name,
         email=email,
         password=password,
     )
@@ -52,7 +52,7 @@ def register(request):
 def user_login(request):
     try:
         data = json.loads(request.body)
-    except json.JSONDecodeError:
+    except (json.JSONDecodeError, UnicodeDecodeError):
         return JsonResponse({"error": "Invalid JSON."}, status=400)
 
     username = data.get("username", "").strip()
