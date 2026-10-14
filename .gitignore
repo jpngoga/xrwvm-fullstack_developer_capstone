@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Virtual environment
+.venv/
+venv/
+
+# Django local files
+backend/db.sqlite3
+.env
+
+# Editor settings
+.theia/
+.vscode/
