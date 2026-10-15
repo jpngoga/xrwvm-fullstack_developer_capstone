@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Date: Thu, 15 Oct 2026 10:55:41 GMT
+Server: WSGIServer CPython/3.15.0
+Content-Type: application/json
+X-Frame-Options: DENY
+Content-Length: 677
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+Vary: origin
+
+{"CarModels": [{"CarMake": "Toyota", "CarModel": "Corolla"}, {"CarMake": "Toyota", "CarModel": "Camry"}, {"CarMake": "Toyota", "CarModel": "Prius"}, {"CarMake": "Honda", "CarModel": "Civic"}, {"CarMake": "Honda", "CarModel": "Accord"}, {"CarMake": "Honda", "CarModel": "CR-V"}, {"CarMake": "BMW", "CarModel": "3 Series"}, {"CarMake": "BMW", "CarModel": "5 Series"}, {"CarMake": "BMW", "CarModel": "X5"}, {"CarMake": "Mercedes-Benz", "CarModel": "C-Class"}, {"CarMake": "Mercedes-Benz", "CarModel": "E-Class"}, {"CarMake": "Audi", "CarModel": "A4"}, {"CarMake": "Audi", "CarModel": "Q5"}, {"CarMake": "Ford", "CarModel": "Mustang"}, {"CarMake": "Nissan", "CarModel": "Altima"}]}
