@@ -105,8 +105,3 @@ footer {
     border-radius: 8px;
     font-weight: 600;
 }
-
-
-/* Frontend static-page refinements */
-body { line-height: 1.6; }
-.navbar .nav-link.active { font-weight: 700; }

@@ -1,0 +1,13 @@
+**Task 6: Logout**
+
+**Command:**
+
+curl -i -b cookies.txt -c cookies.txt -X POST http://127.0.0.1:8003/api/users/logout/
+
+**Output:**
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Set-Cookie: sessionid=[CLEARED]
+
+{"message": "Logout successful."}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./Register.css";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8003";
@@ -66,7 +66,7 @@ export default function Register() {
           <a href="../../../index.html">Home</a>
           <a href="../../static/About.html">About Us</a>
           <a href="../../static/Contact.html">Contact Us</a>
-          <a href="../../../login.html">Login</a>
+          <a href="/login.html">Login</a>
         </div>
       </nav>
 
@@ -121,7 +121,7 @@ export default function Register() {
             </button>
           </form>
 
-          <p className="register-login">Already registered? <a href="../../../login.html">Log in</a></p>
+          <p className="register-login">Already registered? <a href="/login.html">Login</a></p>
         </div>
       </section>
       <footer className="register-footer">© 2026 Best Cars Dealership</footer>

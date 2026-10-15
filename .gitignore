@@ -23,3 +23,6 @@ backend/.venv/
 
 # Local API response containing cookie headers
 login_response.txt
+
+node_modules/
+**/node_modules/

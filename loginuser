@@ -1,0 +1,36 @@
+
+**Task 5: Login**
+
+**Command:**
+
+curl -i -c cookies.txt -X POST http://127.0.0.1:8003/api/users/login/ \
+  -H 'Content-Type: application/json' \
+  -d '{"username":"erickwitonda","password":"Erictonda2026"}'
+
+
+**Output:**
+HTTP/1.1 200 OK
+Content-Type: application/json
+Set-Cookie: csrftoken=[REDACTED]
+Set-Cookie: sessionid=[REDACTED]
+
+{"message": "Login successful.", "username": "erickwitonda"}
+Task 5: Login
+Command:
+curl -i -c cookies.txt -X POST http://127.0.0.1:8003/api/users/login/ -H 'Content-Type: application/json' -d '{"username":"capstoneuser","password":"[TEST PASSWORD]"}' -o login_response.txt
+
+Response:
+HTTP/1.1 200 OK
+Date: Wed, 14 Oct 2026 18:09:51 GMT
+Server: WSGIServer CPython/3.15.0
+Content-Type: application/json
+X-Frame-Options: DENY
+Vary: Cookie, origin
+Content-Length: 60
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+Set-Cookie: csrftoken=DuKdV3qeRiZcCYxz3qbvBsBhcxrsIcEf; expires=Wed, 13 Oct 2027 18:09:51 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+Set-Cookie: sessionid=b8r553h15wq0kabem73q33aoc9ws76tv; expires=Wed, 28 Oct 2026 18:09:51 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+
+{"message": "Login successful.", "username": "capstoneuser"}
